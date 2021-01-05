@@ -1,0 +1,360 @@
+body{
+    margin: 0px;
+    padding:0px;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: monospace;
+    background-color:rgb(199, 240, 208);
+}
+button{
+    cursor: pointer;
+}
+.navbar{
+    z-index: 1;
+    top: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: center;
+    position: sticky;
+    z-index: 1;
+    min-width:800px ;
+    width: auto;
+    height: 80px;
+
+    padding-left: 2%;
+    padding-right: 2%;
+    background-color:black;
+    color:white;
+}
+.logo{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 150px;
+    /* justify-self: flex-start; */
+}
+.logo>img{
+    filter: invert(1);
+    height: 40px;
+    /* border: 2px solid black; */
+}
+.logo>h1{
+    font-size: 20px;
+    width: 50px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    /* border: 2px solid green; */
+    text-align: center;
+}
+.avatar{
+    margin-bottom:-5px;
+    margin-right: -12px;
+    width: 20px;
+    filter: invert(1);
+}
+.left-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-right: 10px;
+}
+.left-menu>ul>li{
+    list-style: none;
+    font-size: 15px;
+    font-weight: 500;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    cursor: pointer;
+}
+.welcome{
+    margin-top: -100px;
+    width: 100%;
+    height: 1100px;
+    overflow: hidden;
+    /* border: 1px solid green; */
+    /* background: url("https://www.automobilemag.com/uploads/sites/5/2020/07/2020-Dodge-Challenger-SRT-Super-Stock-33.jpg"); */
+    /* background: url("https://dcdws.blob.core.windows.net/dws-2210933-3897-media/2016/04/Dodge-Challenger-SRT-Demon.psd-dark.jpg"); */
+    background: url("https://i.ytimg.com/vi/TyxBb9zn0gg/maxresdefault.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    /* background-position-y: -200px; */
+    background-attachment: fixed;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-transform: capitalize;
+}
+.welcome>h1{
+    font-size:60px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    width: 50rem;
+    font-weight: 700;
+    padding: 0px;
+    letter-spacing: 2px;
+    text-shadow: 0 0 3px white;
+}
+/* /* .reflection{
+    display: inline-block;
+    font-size:60px;
+    text-align: center;
+    width: 50rem;
+    color: rgba(256,256,256, 0.1);
+    font-weight: 700;
+    padding: 0px;
+    letter-spacing: 2px; */
+    /* text-shadow: 0 0 3px white; */
+    /* position: absolute;
+    transform:scale(1,-1);
+    -webkit-background-clip: text;
+    background-image: repeating-linear-gradient( rgb(256,256,256,0) ,rgba(256,256,256,0.2)20% ,rgb(256,256,256,0.3)20%);
+    background: repeating-linear-gradient(rgb(256,256,256,0) ,rgba(256,256,256,0.2) ,rgb(256,256,256,0.3) );
+   color: transparent; */
+/* } */
+.welcome>h2{
+    padding-top: 0px;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+.welcome>button{
+    width: 160px;
+    height: 50px;
+    border: 2px solid white;
+    font-size: 15px;
+    padding: 3px;
+    background-color: white;
+    border-radius: 2px;
+    
+    transition: 200ms ease-in;
+}
+.welcome>button:hover{
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+}
+.categories{
+    height: auto;
+    flex-direction: column;
+    width: 100%;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+.cards-div{
+    height: auto ;
+    width: 90%;
+    min-width: 800px;
+    background-color:rgb(199, 240, 208);
+    margin-top: -150px;
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+    align-items: center;
+    padding-top: 30px;
+    /* border: 2px solid white; */
+}
+.categoryHeading>h1{
+    width: 100%;
+    height: 20px;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.card-line{
+    display: flex;
+    flex-wrap: wrap;
+   width: 100%;
+   justify-content: space-evenly ;
+   align-items: center;
+}
+.cards{
+    margin:20px;
+    width: 400px;
+    height:600px ;
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid white; */
+    text-align: center;
+    padding: 0px;
+    margin: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.categoryHeading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.cardImage{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position:center ;
+    height: 600px;
+    width: 100%;
+    max-height: 600px;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+    /* border: 2px solid red; */
+    transition: 0.4s ease-in;
+}
+.overlay{
+    height: 100%;
+    width: 100%;
+    background:linear-gradient(to right,rgba(0,0,0,0.3) 50%, rgba(0,0,0,0) 50%);
+    /* background-color: linear-gradient(to right,rgba(0,0,0,1) 50%,rgba(0,0,0,0) 50%); */
+    background-size: 200% 100%;
+    background-position:bottom right;
+    transition: 0.5s  ease-in-out;
+    
+}
+.cards:hover>.cardImage{
+   transform:scale(1.08);
+}
+.cards:hover .overlay{
+    background-position: left;
+}
+.cardTitle{
+    background-color: white;
+    z-index: 0;
+    width: 100%;
+}
+.vendor{
+    /* margin-top: 20px; */
+    height: 700px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.vendor>h1{
+    font-size: 40px;
+    margin: 5px;
+}
+.vendor>img{
+    width: 170px;
+    margin: 30px;
+}
+.vendor>p{
+    margin-top: 0px;
+    width: 400px;
+    font-size: 15px;
+    text-align: center;
+}
+.vendor>button{
+    width: 160px;
+    height: 50px;
+    border: 2px solid seagreen;
+    font-size: 15px;
+    padding: 3px;
+    background-color: seagreen;
+    border-radius: 2px;
+    transition: 200ms ease-in;
+    color: white;
+}
+.vendor>button:hover{
+    color: black;
+    background-color: transparent;
+    border: 2px solid black;
+}
+.straightMarket{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    /* border: 2px solid red; */
+    height: auto;
+}
+.marketImage{
+    background: url("https://res.cloudinary.com/jerrick/image/upload/fl_progressive,q_auto,w_1024/qlsezh4ley5arqs1qo2a.jpg");
+    height: 600px;
+    min-width: 350px;
+    background-size: cover;
+    background-position: center;
+    width: 49%;
+    border: 2px solid seagreen;
+    border-right:0px ;
+}
+.BringingHead{
+    border: 2px solid seagreen;
+    height: 600px;
+    min-width: 350px;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+.BringingHead>h1{
+    margin-top: 100px;
+    width: 350px;
+    text-align: left;
+}
+.BringingHead>p{
+    width: 350px;
+}
+.contactUs{
+    display: flex;
+    flex-direction: column;
+    justify-content: ;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 80px;
+}
+.contactUs>img{
+    padding-left: 7%
+}
+.contactUs>h1{
+    padding-left: 7%;
+}
+.contact-card-align{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 95%;
+    padding-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-around;
+}
+.contact-cards{
+    width: 250px;
+    margin: 20px;
+}
+.contact-cards>h2{
+    font-size: 22px;
+    font-weight: 500;
+    font-family: monospace;
+}
+.contact-cards>p{
+    line-height: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.copyright{
+    width: 100%;
+    /* min-width: 700px; */
+    text-align: center;
+}
